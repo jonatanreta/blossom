@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: rgb(9, 9, 9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilos para las tarjetas */
+        .card {
+            background-color: rgba(6, 6, 6, 0.9);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 800px; /* Doble de ancho */
+            display: flex;
+        }
+
+        /* Estilos para la columna del formulario */
+        .form-column {
+            width: 50%;
+            padding-right: 20px;
+            text-align: left;
+        }
+
+        .form-column h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para los campos del formulario */
+        .form-control {
+            background-color: #101010;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        /* Estilos para el botón del formulario */
+        .btn-primary {
+            background-color: #63ff9c;
+            border-color: #28a745;
+            color: black;
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .btn-primary[type="submit"] {
+            color: black;
+        }
+
+        /* Estilos para los botones de inicio de sesión con Google y Facebook */
+        .btn-social {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 5px;
+        }
+
+        .btn-social img {
+            height: 20px;
+            padding: 0; /* Eliminar padding */
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Estilos para la columna de la imagen */
+        .image-column {
+            width: 50%;
+            background: url('https://via.placeholder.com/400') no-repeat center center;
+            background-size: cover;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Alinear a la izquierda */
+            text-align: left; /* Texto a la izquierda */
+            color: white;
+            padding: 20px;
+        }
+
+        .image-column h2 {
+            font-size: 24px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 0; /* Eliminar margen superior e inferior */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="form-column">
+            <form id="registerForm">
+                <label for="fullName">Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" class="form-control" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-control" required><br>
+
+                <label for="country">Country of Residence:</label><br>
+                <select id="country" name="country" class="form-control" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                    <!-- Agregar más opciones de país según sea necesario -->
+                </select><br>
+
+                <label for="webInterest">Web Interest:</label><br>
+                <select id="webInterest" name="webInterest" class="form-control" required>
+                    <option value="" disabled selected>Select your interest</option>
+                    <option value="development">Development</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                    <!-- Agregar más opciones según sea necesario -->
+                </select><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" class="form-control" required><br>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the Terms and Conditions
+                </label><br>
+
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            
+            <p style="text-align: center;">Or sign in with</p>
+
+            <div class="btn-container">
+                <button class="btn-social" onclick="signInWithGoogle()">
+                    <img src="imagenes/google.png" alt="Google Logo">
+                </button>
+                <button class="btn-social" onclick="signInWithFacebook()">
+                    <img src="imagenes/facebook.png" alt="Facebook Logo">
+                </button>
+            </div>
+        </div>
+        <div class="image-column">
+            <h2>Join the Web3 Movement: Be Part of Something Revolutionary</h2>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/script.js" defer></script>
+    <script>
+        function signInWithGoogle() {
+            // Implementar la lógica de inicio de sesión con Google
+        }
+
+        
+            function signInWithFacebook() {
+            // Implementar la lógica de inicio de sesión con Facebook
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+    font-family: 'Raleway', sans-serif; /* Raleway de Google Fonts */
+    background-color: rgb(9, 9, 9);
+}
+
+/* Estilos para el header */
+.navbar-dark {
+    background-color: rgb(6, 6, 6); /* Cambia el color de fondo a RGB(6, 6, 6) */
+    height: 100px; /* Ajusta la altura del header */
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white; /* Cambia el color del ícono del botón de navegación a blanco */
+}
+
+.navbar-dark .btn-primary {
+    background-color: #63ff9c; /* Mantiene el color verde del botón primario */
+    border-color: #28a745; /* Mantiene el color del borde del botón primario */
+    color: black; /* Cambia el color del texto del botón primario a negro */
+}
+
+.navbar-dark .btn-secondary {
+    color: white; /* Cambia el color del texto del botón secundario a blanco */
+    border-color: white; /* Cambia el color del borde del botón secundario a blanco */
+}
+
+/* Estilos para los botones principales y secundarios en otras secciones */
+.btn-primary {
+    background-color: #63ff9c;; /* Botón principal verde */
+    border-color: rgb(2, 2, 2);
+    color: #000;
+    border-radius: 20px;
+}
+
+.btn-secondary {
+    background-color: transparent; /* Botón secundario transparente */
+    border-color: rgb(255, 255, 255); /* Borde verde */
+    color: green; /* Texto verde */
+    border-radius: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: rgba(6, 6, 6, 0.9); /* Fondo negro transparente */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Agrega padding dentro de las tarjetas */
+    border-radius: 20px;
+}
+
+/* Estilos para los botones dentro de las tarjetas */
+.card .btn {
+    color: white; /* Texto blanco */
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: rgb(6, 6, 6); /* Cambia el color de fondo a RGB(6, 6, 6) */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.footer a {
+    color: white; /* Cambia el color de los enlaces a blanco */
+}
+
+.footer a:hover {
+    color: white; /* Cambia el color de los enlaces al pasar el mouse a blanco */
+}
+
+/* Estilos para las secciones con tarjetas de ancho completo */
+.banner {
+    margin-top: 10px; /* Agrega más espacio arriba de las tarjetas */
+    margin-bottom: 10px; /* Agrega más espacio abajo de las tarjetas */
+}
+
+.banner .card {
+    background-color: rgba(6, 6, 6, 0.9); /* Fondo negro transparente */
+    color: white; /* Texto blanco */
+    padding: 30px; /* Aumenta el padding general */
+    padding-top: 40px; /* Aumenta el padding superior */
+    padding-bottom: 40px; /* Aumenta el padding inferior */
+}
+
+/* Estilos para las tarjetas debajo de la primera tarjeta de ancho completo */
+.banner .container > .card:not(:first-child) {
+    background-color: rgba(6, 6, 6, 0.9); /* Fondo negro transparente */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Ajusta el padding general */
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+}
+
+/* Estilos para las animaciones */
+.animation-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para los campos del formulario */
+.form-control {
+    background-color: #101010; /* Color de fondo #101010 */
+    color: white; /* Color del texto blanco */
+}
+
+/* Estilos para el texto del botón del formulario */
+.btn-primary[type="submit"] {
+    color: black; /* Texto del botón negro */
+}
+
+/* Estilos para los títulos y descripciones de las secciones */
+h2 {
+    font-size: 24px; /* Reducir tamaño del título */
+    font-family: 'Raleway', sans-serif; /* Raleway de Google Fonts */
+}
+
+p {
+    font-size: 14px; /* Reducir tamaño de la descripción */
+    font-family: 'Raleway', sans-serif; /* Raleway de Google Fonts */
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/* Estilos para la primera tarjeta de la primera sección */
+.banner .container > .card:first-child {
+    padding-top: 5px; /* Ajusta el padding superior */
+    padding-bottom: 5px; /* Ajusta el padding inferior */
+}
+
+/* Estilos para las tarjetas en la segunda sección */
+.banner .container > .row > .col-md-4 .card {
+    margin-bottom: 10px; /* Reducir el margen inferior */
+    padding-bottom: 0px; /* Reducir el padding inferior */
+    padding-top: 20px;
+}
+
+/* Estilos para las imágenes en las tarjetas de la segunda sección */
+.banner .container > .row > .col-md-4 .card .card-img-top {
+    width: 25%; /* Ancho al 50% */
+    height: auto; /* Altura automática */
+    margin-left: 20px; /* Espacio a la derecha */
+}
+
+/* Estilos para los textos y el botón en las tarjetas de la segunda sección */
+.banner .container > .row > .col-md-4 .card .card-body {
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding-right: 20px; /* Padding derecho */
+}
+
+/* Estilos para el botón en las tarjetas de la segunda sección */
+.banner .container > .row > .col-md-4 .card .card-body .btn {
+    margin-top: 0px; /* Espacio superior */
+    margin-left: 0; /* Quitar el margen izquierdo */
+    padding-left: 15px; /* Padding izquierdo */
+}
+
+
+.contact .card-body {
+    display: flex;
+    align-items: center;
+}
+
+.contact .col-md-6 {
+    height: 100%;
+}
+
+.contact .col-md-6 h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.contact .col-md-6 form {
+    width: 100%;
+}

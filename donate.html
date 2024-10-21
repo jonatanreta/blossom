@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar Criptomonedas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Agrega tu archivo de estilos personalizados si lo tienes -->
+    <style>
+        /* Estilo para el footer */
+        footer.footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000; /* Cambia el color de fondo del footer a negro */
+            color: #ffffff; /* Cambia el color del texto del footer a blanco */
+            padding: 20px 0;
+        }
+
+        /* Estilo para el título principal y la descripción */
+        h1, p {
+            color: #ffffff; /* Cambia el color del texto del título y la descripción a blanco */
+        }
+
+        /* Estilo para los títulos de los campos */
+        form label {
+            color: #ffffff; /* Cambia el color de los títulos de los campos a blanco */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn btn-primary mr-2">Sign up</button>
+                    <button class="btn btn-secondary">Log in</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido de la página -->
+    <div class="container mt-4">
+        <h1 class="mb-4">¡Apoya nuestra causa!</h1>
+        <p>Gracias por considerar hacer una donación para apoyar nuestro trabajo. Utiliza la siguiente forma para realizar tu donación en criptomonedas.</p>
+
+        <!-- Formulario de donación -->
+        <form id="crypto-donation-form" class="mt-4">
+            <div class="form-group">
+                <label for="crypto-type">Selecciona la criptomoneda:</label>
+                <select class="form-control" id="crypto-type">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="ethereum">Ethereum</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Cantidad a donar:</label>
+                <input type="text" class="form-control" id="amount" placeholder="Ingresa la cantidad a donar">
+            </div>
+            <div class="form-group">
+                <label for="wallet-address">Dirección de tu billetera de criptomonedas:</label>
+                <input type="text" class="form-control" id="wallet-address" placeholder="Ingresa tu dirección de billetera">
+            </div>
+            <button type="submit" class="btn btn-primary">Donar ahora</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4 bg-black text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p>Address: 123 Main Street, City, Country</p>
+                    <p>Phone: +123 456 789</p>
+                    <p>Email: info@yourdomain.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">© 2024 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Agrega cualquier otro script necesario para procesar la donación con la pasarela de pago de criptomonedas -->
+
+</body>
+</html>
+
